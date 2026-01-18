@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form>
+
+            <div class="input-container">
+                <label for="fullname">Name</label>
+                <input name="fullname" type="text" id="fullname" placeholder="Enter your name">
+            </div>
+
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input name="email" type="text" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-container">
+                <label for="age">Age</label>
+                <input name="age" type="number" id="age" placeholder="Enter your age">
+            </div>
+
+            <div class="option-con">
+                <label for="describes">Which option best describes you ?</label>
+                <select id="describes" name="describes-you">
+                    <option selected disabled>Select</option>
+                    <option value="student">Student</option>
+                    <option value="working-pro">Working Pro</option>
+                </select>
+            </div>
+
+            <div class="option-con">
+                <p for="friend">Would you are my friend ?</p>
+                <label for="rec-1">
+                    <input type="radio" name="rec" id="rec-1">
+                    Yes
+                </label>
+
+                <label for="rec-2">
+                    <input type="radio" name="rec" id="rec-2">
+                    No
+                </label>
+
+                <label for="rec-3">
+                    <input type="radio" name="rec" id="rec-3">
+                    Maybe
+                </label>
+            </div>
+
+            <div class="option-con">
+                <p>Language and Framework you know ?</p>
+                <label for="che-1">
+                    <input id="che-1" type="checkbox" name="che">
+                    C
+                </label>
+                <label for="che-2">
+                    <input id="che-2" type="checkbox" name="che">
+                    C++
+                </label>
+                <label for="che-3">
+                    <input id="che-3" type="checkbox" name="che">
+                    JAVA
+                </label>
+                <label for="che-4">
+                    <input id="che-4" type="checkbox" name="che">
+                    JavaScript
+                </label>
+                <label for="che-5">
+                    <input id="che-5" type="checkbox" name="che">
+                    Go
+                </label>
+                <label for="che-6">
+                    <input id="che-6" type="checkbox" name="che">
+                    TS
+                </label>
+            </div>
+
+            <div class="option-con">
+                <label for="comment">Any comments or suggestion ?</label>
+                <textarea name="comment" id="comment">Your Comment...</textarea>
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
