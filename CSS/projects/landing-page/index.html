@@ -14,27 +14,32 @@
             <div class="logo">
                 ART FACTORY
             </div>
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">SERVICES</a>
-            <a href="">FREQUENTLY QUESTIONS</a>
-            <a href="">DROP DOWN</a>
-            <a href="">CONTACT US</a>
+            <div class="links">
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">SERVICES</a>
+                <a href="">FREQUENTLY QUESTIONS</a>
+                <a href="">DROP DOWN</a>
+                <a href="">CONTACT US</a>
+            </div>
         </nav>
     </header>
 
     <main>
 
         <section id="hero-section">
-            <div class="here-section-details">
-                <h1>Art Factory is free for YOU</h1>
-                <p>This template is available for 100% free of charge on TemplateMo. Download, modify and use this for
-                    your business
-                    website.</p>
-                <button>FIND OUT MORE</button>
-            </div>
-            <div class="hero-image-container">
-                <img src="./slider-icon.png" alt="hero-image" loading="lazy">
+            <div class="here-section-container">
+                <div class="here-section-details">
+                    <h1>Art Factory is free <span>for YOU</span></h1>
+                    <p>This template is available for 100% free of charge on TemplateMo. Download, modify and use this
+                        for
+                        your business
+                        website.</p>
+                    <button>FIND OUT MORE</button>
+                </div>
+                <div class="hero-image-container">
+                    <img src="./slider-icon.png" alt="hero-image" loading="lazy">
+                </div>
             </div>
         </section>
 
@@ -42,12 +47,14 @@
         <section id="about-section">
             <div class="about-section-details">
                 <h2>Vivamus sodales nisi id ante molestie venenatis</h2>
-                <p>This template is <a href="">last updated on 19 Jan 2025</a> for main menu drop-down arrow and sub
+                <p class="para-1">This template is <a href="">last updated on 19 Jan 2025</a> for main menu drop-down
+                    arrow and sub
                     menu text color.
                     Duis auctor dolor
                     eu scelerisque vestibulum. Vestibulum lacinia, nisl sit amet tristique condimentum.
                 </p>
-                <p>Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio.
+                <p class="para-2">Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices
+                    malesuada odio.
                     Donec non quam
                     euismod, mattis dui a, ultrices nisi.</p>
                 <button>DISCOVER MORE</button>
@@ -57,63 +64,95 @@
                 <img src="./about-img.png" alt="about-img" loading="lazy">
             </div>
         </section>
+        <hr>
+
 
         <section id="services-section">
-            <div class="services-section-details">
-                <h2>Curabitur aliquam eget tellus id porta</h2>
-            </div>
-            <div class="services-image-container">
-                <img src="./services.png" alt="services" loading="lazy">
-            </div>
-
             <div class="services-details">
-
-                <div>
-                    <div class="services-image-container">
-                        <img src="./service-icon-01.png" alt="">
+                <h2>Curabitur aliquam eget tellus id porta</h2>
+                <p>Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit. Aenean in feugiat purus.</p>
+                <div class="sub-details-container">
+                    <div class="sub-details-image-container">
+                        <img src="./service-icon-01.png" alt="services">
                     </div>
-                    <h4 class="service-title">First Service Title</h4>
-                    <p class="about-service">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, aperiam
-                        veniam. Animi.</p>
-                    <button class="service-btn">
-                        READ MORE
-                    </button>
+                    <div>
+                        <h4>Nulla ultricies risus quis risus</h4>
+                        <p>You can use this website template for commercial or non-commercial purposes.</p>
+                    </div>
                 </div>
 
-                <div>
-                    <div class="services-image-container">
-                        <img src="./service-icon-02.png" alt="">
+                <div class="sub-details-container">
+                    <div class="sub-details-image-container">
+                        <img src="./service-icon-02.png" alt="services">
                     </div>
-                    <h4 class="service-title">Second Service Title</h4>
-                    <p class="about-service">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, aperiam
-                        veniam. Animi.</p>
-                    <button class="service-btn">
-                        DISCOVER MORE
-                    </button>
+                    <div>
+                        <h4>Donec consequat commodo purus</h4>
+                        <p>You have no right to re-distribute this template as a downloadable ZIP file on any website.
+                        </p>
+                    </div>
                 </div>
 
-                <div>
-                    <div class="services-image-container">
-                        <img src="./service-icon-03.png" alt="">
+                <div class="sub-details-container">
+                    <div class="sub-details-image-container">
+                        <img src="./service-icon-03.png" alt="services">
                     </div>
-                    <h4 class="service-title">Third Service Title</h4>
-                    <p class="about-service">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, aperiam
-                        veniam. Animi.</p>
-                    <button class="service-btn">
-                        MORE DETAIL
-                    </button>
+                    <div>
+                        <h4>Sed placerat sollicitudin mauris</h4>
+                        <p>If you have any question or comment, please contact us on TemplateMo.</p>
+                    </div>
                 </div>
+            </div>
 
+            <div>
+                <img src="./services.png" alt="">
+            </div>
+
+        </section>
+
+
+        <section class="services-card-section">
+            <div class="card-container">
+                <div class="card-image-container">
+                    <img src="./service-icon-01.png" alt="">
+                </div>
+                <h2>First Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ex accusantium cum
+                    eveniet dolores nisi, iusto dolore excepturi provident nulla, reiciendis cupiditate officia
+                    perferendis molestiae voluptatum veniam quidem hic! Velit consequatur a labore?</p>
+                <button>READ MORE</button>
+            </div>
+
+            <div class="card-container">
+                <div class="card-image-container">
+                    <img src="./service-icon-01.png" alt="">
+                </div>
+                <h2>Second Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ex accusantium cum
+                    eveniet dolores nisi, iusto dolore excepturi provident nulla, reiciendis cupiditate officia
+                    perferendis molestiae voluptatum veniam quidem hic! Velit consequatur a labore?</p>
+                <button>READ MORE</button>
+            </div>
+
+            <div class="card-container">
+                <div class="card-image-container">
+                    <img src="./service-icon-01.png" alt="">
+                </div>
+                <h2>Third Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis asperiores ex accusantium cum
+                    eveniet dolores nisi, iusto dolore excepturi provident nulla, reiciendis cupiditate officia
+                    perferendis molestiae voluptatum veniam quidem hic! Velit consequatur a labore?</p>
+                <button>READ MORE</button>
             </div>
         </section>
+
 
         <section id="frequently-asked-section">
             <h2>Frequently Asked Questions</h2>
             <p>Vivamus venenatis eu mi ac mattis. Maecenas ut elementum sapien. Nunc euismod risus ac lobortis congue.
                 Sed erat quam.</p>
 
-            <div>
-                <div>
+            <div class="questions-section">
+                <div class="questions-section-1">
                     <h4>Class aptent taciti sociosqu ad litora torquent per conubia</h4>
                     <p>Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum. Nulla ultricies risus
                         quis risus
@@ -128,7 +167,7 @@
                     <button>CONTACT US</button>
                 </div>
 
-                <div>
+                <div class="questions-section-2">
                     <h4>First Common Question</h4>
                     <p>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum
                         consequat ex. Suspendisse
@@ -136,7 +175,7 @@
                     <p>Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales.
                         Aliquam erat volutpat.</p>
 
-                    <div>
+                    <div class="questions-container">
                         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit ?</h5>
                         <h5>Lorem ipsum dolor sit amet consectetur ?</h5>
                         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit ?</h5>
@@ -147,8 +186,7 @@
             </div>
         </section>
 
-        <section id="location-section">
-            <div id="map-container"></div>
+        <section id="form-section">
             <form class="get-connect">
                 <input type="text" name="fullname" placeholder="Full Name">
                 <input type="email" name="email" placeholder="E-Mail">
@@ -162,16 +200,16 @@
         <p>Copyright © 2026 Art Factory Company . Design: <a href="">TemplateMo</a></p>
         <div class="icons-container">
             <div class="icon">
-                <img src="" alt="social-media-connection" loading="lazy">
+                🌎
             </div>
             <div class="icon">
-                <img src="" alt="social-media-connection" loading="lazy">
+                🌐
             </div>
             <div class="icon">
-                <img src="" alt="social-media-connection" loading="lazy">
+                ▶️
             </div>
             <div class="icon">
-                <img src="" alt="social-media-connection" loading="lazy">
+                📢
             </div>
         </div>
     </footer>
