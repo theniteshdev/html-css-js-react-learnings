@@ -1,0 +1,48 @@
+Meaning of reassignment -
+    reassign means to chage the memory address of a variable
+
+How we can update, delete, add to a object even we use const keyword 
+    under the hood const not allowed us to update the memory address of the variable but we can modify the object values | when we do these operations our variable's memory address does not chage
+
+Object.seal()
+Object.freeze()
+
+object.seal effects-
+* no new properties
+* no deletetion
+* just acces values and update existance values
+
+Object.freeze effects-
+* no new properties
+* no deletetion
+* no updation
+* just access values
+
+{
+    // note
+    We can update delete and add new properties in nesting objects of both the .sealed and .freezed objects
+}
+
+'in' and 'Object.isFroozen()' :: 
+    in -> this returns boolean value- check if property is exist or not
+
+    Object.isFroozen() -> this also returns boolean value- check if object is froozen or not
+
+examples_codee::
+const computer = {
+    cpu: {
+        release_date: "4th Jan 2023",
+        fullName: "AMD Rayzen 7 7730U",
+        total_cores: 8,
+        threads: 16,
+    },
+    ram: 16 + "GB",
+    rom: 512 + "GB",
+    purchase_date: "4th Nov 2024"
+};
+
+Object.isFroozen(computer); // false
+"whos_machine" in computer; // false
+
+
+// this is my own note lets connect and learn toegether
