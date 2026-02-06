@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Stack in JavaScript</title>
+</head>
+
+<body>
+    <h1>day-29 day of Frontend Journey</h1>
+    <h2>Call Stack in JS</h2>
+    <p>Call Stack is a data structure to manage running code, paused code in JS because JS is Single Threaded Lang.</p>
+    <strong>Call Stack follow the principle: LIFO :: Last-In First-Out</strong>
+
+    <div>
+        <h3>How Call Stack executes JS code ?</h3>
+        <p>Its takes code and execute and then remove all the code from call stack.</p>
+        <p>But, in case of function it take the function create the lexcal scope and then execute then after ended it
+            delete this.</p>
+
+        <p>when maximum call stack size exceeded that we call as Stack Overflow. Means Overflow of the Call Stack</p>
+    </div>
+    <script>
+        // debugger
+        function sayHello() {
+            console.log("Hello Ji")
+        };
+        function sayHi() {
+            console.log("Hi, Ji")
+        }
+        sayHello();
+        sayHi()
+        var a = 45;
+        console.log(a)
+    </script>
+</body>
+
+</html>
