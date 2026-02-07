@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-30/250 days Hoisting Conpect</title>
+</head>
+
+<body>
+    <h1>Day-30/250 Frontend Challenge</h1>
+    <br>
+    <h2>Hoisting</h2>
+    <ul>
+        <p>topics that i learned</p>
+        <li>Hoisting-defination and how ?</li>
+        <li>concepts of - Temporal Dead Zone (TDZ)</li>
+        <li>anonymous functions</li>
+        <li>function expression</li>
+        <li>function declaration</li>
+        <li>IIFE (immediately invoked function expression)</li>
+    </ul>
+
+    <script>
+        console.log(a); // undefined because variable a is hoisted
+        // console.log(b); // reference error
+
+        var a = "Hello Ji"; // global variable
+        const b = "boy"; // not access up to line:29 due to TDZ
+        sayHello(); // this is hoisted
+        sayHi(); // this is not working because of TDZ
+        const sayHi = function () {
+            console.log("Hi,")
+        }; // this is anonymous function
+        function sayHello() {
+            console.log("Hello Ji")
+        }; // this is function declaration
+    </script>
+</body>
+
+</html>
