@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-32/250 | Frontend Challenge</title>
+</head>
+
+<body>
+    <h1>Learing Lexical and Block Scope</h1>
+
+    <script>
+        function sayHi() {
+            a = "apple"
+            console.log("Hi")
+        }
+        {
+            var PI = 22 / 7;
+            hi = "hello"
+        }
+
+        function click() {
+            console.log("Clicked!")
+            console.log(hi)
+            // console.log(a); // this is not accessable
+        }
+        // console.log(a); // this is not accessable
+        click();
+        console.log(PI);
+
+        function mainFunction() {
+            let aa = "ant";
+            const bb = "boy";
+            var cc = "cat";
+
+            function childFunction() {
+                console.log(aa)
+                console.log(bb)
+                console.log(cc)
+                const dd = "dad"
+                var ee = "ear"
+            };
+
+            console.log(dd);
+            console.log(ee);
+            childFunction()
+        }
+
+        mainFunction()
+    </script>
+</body>
+
+</html>
