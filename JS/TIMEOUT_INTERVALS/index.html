@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-32 of 250 days challenge | Javascript</title>
+</head>
+
+<body>
+    <h2>Topics-</h2>
+    <ul>
+        <li>setTimeout()</li>
+        <li>clearTimeout()</li>
+        <li>setInterval()</li>
+        <li>clearInterval()</li>
+    </ul>
+
+    <script>
+        console.log("Learning Starts")
+        const timeout0 = setTimeout("console.log('Good Job!')\nconsole.log('Appriciate You!!')", 1000)
+        // debugger
+        function sayHello() {
+            console.log("Hello, World!!")
+        }
+        const timeout1 = setTimeout("sayHello()", 1000)
+        const timeout2 = setTimeout("+function hey(){console.log('Hmm')}()", 4500)
+        console.log(timeout1);
+
+
+        const inter1 = setInterval("function sayhello(){console.log('Hello, Ji')}\nsayhello()", 1000)
+    </script>
+</body>
+
+</html>
