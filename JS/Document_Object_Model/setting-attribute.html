@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Learning setAttribute and getAttribute in Javascript DOM</title>
+</head>
+<body>
+	
+	<p title="say-hello">Hello, World!</p>
+
+	<div>
+		<h2>Topic Title</h2>
+		<p>test content is this for practice.</p>
+	</div>
+<footer class="footer-class" id="this_is_ID">&copy; all right reserved</footer>
+	<script type="text/javascript">
+		
+		const para = document.querySelector("p");
+		// getting attributes
+		console.log(para.attributes);
+		// setting attributes
+		para.setAttribute("apple", "hello");
+		console.log(para.getAttribute("apple"));
+
+		let div = document.querySelector("body > div");
+		div.setAttribute("title", "this is test div");
+		div.setAttribute("hy", "hydrogen");
+		console.log(div.attributes.title.value);
+
+		var ftr = document.querySelector("body > footer");
+		console.log(ftr.id);
+		console.log(ftr.className);
+		console.log(ftr.attributes[1].value);
+
+	</script>
+</body>
+</html>
