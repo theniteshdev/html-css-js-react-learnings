@@ -1,0 +1,19 @@
+*{
+    font-family: sans-serif;
+}
+.box{
+    background-color: yellow;
+    padding: 40px;
+    margin: 0;
+}
+
+.box >div{
+    padding: 40px;
+    margin: 8px;
+}
+
+.b1{background-color: green;}
+.b2{background-color: red;}
+.b3{background-color: pink;}
+.b4{background-color: teal;}
+.b5{background-color: cyan;}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Delegation | Day 59</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Day 59</h2>
+    <h1>Event Delegation in JavaScript</h1>
+
+    <h3>What is Event Delegation?</h3>
+    <p>
+        Event Delegation is a technique in JavaScript where instead of adding event listeners
+        to multiple child elements, we add a single event listener to their parent element.
+        The parent listens for events that bubble up from its children and handles them
+        accordingly using the event object.
+    </p>
+
+    <h3>Why use Event Delegation?</h3>
+    <ul>
+        <li>Improves performance by reducing the number of event listeners</li>
+        <li>Follows the DRY (Don't Repeat Yourself) principle</li>
+        <li>Works automatically for dynamically added elements</li>
+    </ul>
+
+    <h3>How does it work?</h3>
+    <p>
+        When an event occurs on a child element, it "bubbles up" to its parent.
+        We can detect which child triggered the event using <code>event.target</code>
+        and apply logic based on that.
+    </p>
+
+
+    <div class="box">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="b5"></div>
+    </div>
+</body>
+
+</html>
