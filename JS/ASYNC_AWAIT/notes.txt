@@ -1,0 +1,9 @@
+Behind the scene async and await function uses the Promises
+
+It is just simplified the syntax and makes the code clean;
+
+
+// throw
+syntax- throw "err"
+
+this text after throw is shown as error and exit the programme
