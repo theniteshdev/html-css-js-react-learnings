@@ -1,0 +1,2 @@
+What is OOP ?
+OOP is a programming method where all methods properties logic are in one class and working on a big object.
